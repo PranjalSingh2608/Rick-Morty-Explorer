@@ -14,9 +14,7 @@ body {
   background-color: var(--background);
   color: var(--text);
   margin: 0;
-  box-sizing: border-box;
-  padding: 2% 2% 2% 2%;
-  
+  box-sizing: border-box;  
   min-height: 100vh;
   overflow-x: hidden;
 }
