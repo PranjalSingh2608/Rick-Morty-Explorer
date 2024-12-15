@@ -94,7 +94,8 @@ button.active {
 
 .slider-container {
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
+  width: 100vw;
   padding: 20px 0;
 }
 
