@@ -6,7 +6,7 @@ import { Sun, Moon } from 'lucide-react'
 import './App.css'
 
 function App() {
-  const [activeTab, setActiveTab] = useState('characters')
+  const [activeTab, setActiveTab] = useState('')
   const [theme, setTheme] = useState('dark')
 
   useEffect(() => {
