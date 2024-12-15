@@ -22,9 +22,9 @@ function App() {
       <header>
         <div className="header-content">
           <h1>Rick and Morty Explorer</h1>
-          <button onClick={toggleTheme} className="theme-toggle">
+          {/* <button onClick={toggleTheme} className="theme-toggle">
             {theme === 'light' ? <Moon /> : <Sun />}
-          </button>
+          </button> */}
         </div>
         <nav>
           <button

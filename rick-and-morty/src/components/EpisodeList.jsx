@@ -16,17 +16,17 @@ function EpisodeList() {
       })
   }, [page])
 
-  const handlePrev = () => {
-    if (activeIndex > 0) {
-      setActiveIndex(activeIndex - 1)
-    }
-  }
+  // const handlePrev = () => {
+  //   if (activeIndex > 0) {
+  //     setActiveIndex(activeIndex - 1)
+  //   }
+  // }
 
-  const handleNext = () => {
-    if (activeIndex < episodes.length - 1) {
-      setActiveIndex(activeIndex + 1)
-    }
-  }
+  // const handleNext = () => {
+  //   if (activeIndex < episodes.length - 1) {
+  //     setActiveIndex(activeIndex + 1)
+  //   }
+  // }
 
   useEffect(() => {
     if (gridRef.current) {
@@ -39,9 +39,9 @@ function EpisodeList() {
     <div className="episode-list">
       <h2>Episodes</h2>
       <div className="slider-container">
-        <button className="slider-button prev" onClick={handlePrev}>
+        {/* <button className="slider-button prev" onClick={handlePrev}>
           &#8249;
-        </button>
+        </button> */}
         <div className="grid" ref={gridRef}>
           {episodes.map((episode, index) => (
             <div
@@ -54,9 +54,9 @@ function EpisodeList() {
             </div>
           ))}
         </div>
-        <button className="slider-button next" onClick={handleNext}>
+        {/* <button className="slider-button next" onClick={handleNext}>
           &#8250;
-        </button>
+        </button> */}
       </div>
       <div className="pagination">
         <button onClick={() => setPage(page - 1)} disabled={!info?.prev}>
